@@ -1,20 +1,65 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Portfolio Name</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Welcome to My Portfolio</h1>
-      <nav></nav>
-    </header>
 
-    <footer>
-      <p>Contact information or social media links</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/ressources/images/favicon.png" type="image/x-icon">
+
+    <title>Mathéo Hersan Portfolio</title>
+
+</head>
+<body>
+    <div class="container">
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">Mathéo</p>
+                <span>.</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-menu-list">
+                    <li class="nav-list">
+                        <a href="#home" class="nav-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#about" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-btn">
+                <button class="btn">Download my CV <i class="uil uil-file-alt"></i></button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- type JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!--scroll JS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
 </html>
