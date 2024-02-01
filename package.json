@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio presenting my skills, projects and experiences in the field of web development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server --port=3000 & node-sass src/scss/main.scss public/css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HMatheo/Portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "HTML",
+    "CSS",
+    "SCSS",
+    "JavaScript"
+  ],
+  "author": "Hersan Mathéo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HMatheo/Portfolio/issues"
+  },
+  "homepage": "https://github.com/HMatheo/Portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
