@@ -1,0 +1,136 @@
+@import 'var';
+
+.start{
+    padding-inline: 10vw;
+}
+
+//feature design
+.featured-box{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    min-height: 700px;
+}
+
+//feature design
+.featured-box {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    min-height: 700px;
+}
+
+//feature text
+.featured-text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 80vh;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 20px;
+}
+.featured-text-card span {
+    background: $third-color;
+    color: $color-white;
+    padding: 3px 8px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+.featured-name {
+    font-size: 50px;
+    font-weight: 600;
+    color: $text-color-second;
+    margin-block: 20px;
+}
+.typedText {
+    text-transform: capitalize;
+    color: $text-color-third;
+}
+.featured-text-info {
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: $text-color-second;
+}
+.featured-text-btn {
+    display: flex;
+    gap: 20px;
+
+    > .blue-btn {
+        background: $first-color;
+        color: $color-white;
+        &:hover {
+            background: $first-color-hover;
+        }
+    }
+}
+.social_icons {
+    display: flex;
+    margin-top: 5em;
+    gap: 30px;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+
+    &:hover {
+        color: $first-color;
+    }
+}
+
+//feature img
+.featured-image {
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    min-height: 80vh;
+    width: 50%;
+}
+.image {
+    margin: auto 0;
+    width: 380px;
+    height: 380px;
+    border-radius: 60% 40% 60% 40%;
+    overflow: hidden;
+    animation: imgFloat 7s ease-in-out infinite;
+
+    img {
+        width: 380px;
+        height: 380px;
+        object-fit: cover;
+    }
+}
+@keyframes imgFloat {
+    50% {
+        transform: translateY(10px);
+        border-radius: 40% 60% 40% 60%;
+    }
+}
+.scroll-btn{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    gap: 5px;
+    text-decoration: none;
+    color: $text-color-second;
+    background: $color-white;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+
+    i {
+        font-size: 20px;
+    }
+}
