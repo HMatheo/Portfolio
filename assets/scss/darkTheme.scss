@@ -1,0 +1,77 @@
+@import "var";
+
+/* -------------- DARKMODE -------------- */
+body.dark {
+    background-color: $body-black;
+}
+
+
+.dark {
+
+    footer{
+        background-color: $body-black;
+
+        a{
+            color: $text-color-black;
+        }
+    }
+
+    .icon {
+        background-color: white;
+    }
+
+    h1,
+    h3,
+    p,
+    a {
+        color: $text-color-black;
+    }
+
+    nav {
+        background: $body-black;
+    }
+
+    .nav-logo span {
+        color: $green-black;
+    }
+
+    .about-info {
+        background: $card-black;
+    }
+
+    .btn__indicator {
+        transform: translateX(5em);
+
+        /* Modifier la translation */
+        background-color: $dark-color;
+        box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn__icon {
+        color: $dark-icon-color;
+    }
+
+    .about-btn{
+        > .btn{
+            background: $green-black;
+            color: $dark-color;
+            &:hover {
+                background: $color-white;
+                color: $dark-color;
+            }
+        }
+    }
+
+    .featured-text-btn {
+        > .btn {
+            //border: 1px solid $green-black;
+            //background-color: $body-black;
+            background: $green-black;
+            color: $dark-color;
+            &:hover {
+                background: $color-white;
+                color: $dark-color;
+            }
+        }
+    }
+}

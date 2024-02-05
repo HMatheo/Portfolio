@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* navbar */
 nav {
   position: fixed;
@@ -53,6 +54,43 @@ nav {
 .nav-menu-btn i {
   font-size: 28px;
   cursor: pointer;
+}
+
+.mode {
+  display: flex;
+  align-items: center;
+}
+
+.moon-sun {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background: #f5f5f5;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.moon-sun :is(#moon, #sun) {
+  position: absolute;
+  color: black;
+  transition: 0.2s ease-in-out;
+}
+
+#sun {
+  opacity: 0;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center; /* Aligner les éléments verticalement */
+}
+
+/* Ajoutez le code suivant après la définition de .moon-sun dans votre CSS */
+.btn {
+  margin-right: 20px; /* Espacement entre les boutons */
 }
 
 /*# sourceMappingURL=nav.css.map */

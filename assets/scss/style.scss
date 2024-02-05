@@ -115,7 +115,17 @@ h3{
 
 /* query 900px */
 @media only screen and (max-width: 900px) {
+    //.nav-button {
+    //    display: none;
+    //}
+
     .nav-button {
+        display: flex;
+        order: 3; /* Changer l'ordre d'affichage en dernier */
+    }
+
+    /* Ajouter la règle suivante pour masquer le bouton "Download my CV" */
+    .btn {
         display: none;
     }
 
@@ -146,6 +156,7 @@ h3{
         display: flex;
         align-items: center;
         justify-content: center;
+        order: 1;
     }
 
     .featured-box {
@@ -182,5 +193,59 @@ h3{
             width: 190px;
             height: 190px;
         }
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+    .col{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .about-info, .contact-info{
+        width: 100%;
+    }
+    .project-container{
+        justify-content: center;
+    }
+    .project-box{
+        width: 80%;
+    }
+}
+.active-link{
+    position: relative;
+    color: $first-color;
+    transition: .3;
+
+    &:after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -15px;
+        transform: translate(-50%, -50%);
+        width: 5px;
+        height: 5px;
+        background: $first-color;
+        border-radius: 50%;
+    }
+}
+
+//query 540px
+@media only screen and (max-width: 540px) {
+    .featured-name {
+        font-size: 40px;
+    }
+    .project-box {
+        width: 100%;
+    }
+
+    .form-inputs{
+        flex-direction: column;
+    }
+    .input-field{
+        width: 100%;
     }
 }

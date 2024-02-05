@@ -1,0 +1,56 @@
+/* -------------- DARKMODE -------------- */
+body.dark {
+  background-color: rgb(43, 45, 53);
+}
+
+.dark footer {
+  background-color: rgb(43, 45, 53);
+}
+.dark footer a {
+  color: rgb(193, 204, 237);
+}
+.dark .icon {
+  background-color: white;
+}
+.dark h1,
+.dark h3,
+.dark p,
+.dark a {
+  color: rgb(193, 204, 237);
+}
+.dark nav {
+  background: rgb(43, 45, 53);
+}
+.dark .nav-logo span {
+  color: rgb(74, 223, 186);
+}
+.dark .about-info {
+  background: rgb(50, 51, 60);
+}
+.dark .btn__indicator {
+  transform: translateX(5em);
+  /* Modifier la translation */
+  background-color: rgb(40, 40, 51);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+}
+.dark .btn__icon {
+  color: #fff;
+}
+.dark .about-btn > .btn {
+  background: rgb(74, 223, 186);
+  color: rgb(40, 40, 51);
+}
+.dark .about-btn > .btn:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(40, 40, 51);
+}
+.dark .featured-text-btn > .btn {
+  background: rgb(74, 223, 186);
+  color: rgb(40, 40, 51);
+}
+.dark .featured-text-btn > .btn:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(40, 40, 51);
+}
+
+/*# sourceMappingURL=darkTheme.css.map */

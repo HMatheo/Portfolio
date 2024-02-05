@@ -97,7 +97,7 @@
   margin: auto 0;
   width: 380px;
   height: 380px;
-  border-radius: 60% 40% 60% 40%;
+  border-radius: 60% 40% 60% 40%; /* Anciens pourcentages */
   overflow: hidden;
   animation: imgFloat 7s ease-in-out infinite;
 }
@@ -110,7 +110,7 @@
 @keyframes imgFloat {
   50% {
     transform: translateY(10px);
-    border-radius: 40% 60% 40% 60%;
+    border-radius: 40% 60% 40% 60%; /* Nouveaux pourcentages */
   }
 }
 .scroll-btn {
