@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "live-server --port=3000 & node-sass assets/scss/nav.scss assets/scss/style.scss assets/scss/var.scss assets/scss/start.scss assets/scss/about.scss assets/css/main.css --watch"
+    "start": "node-sass assets/scss/ -o assets/css/ --watch & live-server --port=3000"
   },
   "repository": {
     "type": "git",

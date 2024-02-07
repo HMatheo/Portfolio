@@ -57,11 +57,24 @@
     display: flex;
     gap: 20px;
 
-    > .blue-btn {
+
+    .scroll-btn {
         background: $first-color;
-        color: $color-white;
-        &:hover {
-            background: $first-color-hover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 50px;
+        gap: 5px;
+        text-decoration: none;
+        color: $text-color-second;
+        background: $color-white;
+        border-radius: 30px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+        margin-left: auto;
+
+        i {
+            font-size: 20px;
         }
     }
 }
@@ -111,26 +124,5 @@
     50% {
         transform: translateY(10px);
         border-radius: 40% 60% 40% 60%; /* Nouveaux pourcentages */
-    }
-}
-.scroll-btn{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    translate: -50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 50px;
-    gap: 5px;
-    text-decoration: none;
-    color: $text-color-second;
-    background: $color-white;
-    border-radius: 30px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
-
-    i {
-        font-size: 20px;
     }
 }

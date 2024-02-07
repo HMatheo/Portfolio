@@ -1,3 +1,20 @@
+.btn-contact {
+  font-weight: 500;
+  padding: 12px 20px;
+  background: #efefef;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.btn-contact > i {
+  margin-left: 10px;
+}
+.btn-contact:hover {
+  background: rgb(0, 201, 255);
+  color: rgb(255, 255, 255);
+}
+
 .contactDiv {
   padding-inline: 10vw;
 }
@@ -17,7 +34,7 @@
   overflow: hidden;
 }
 .contact-info > h2 {
-  color: var(--color-white);
+  color: rgb(255, 255, 255);
   margin-bottom: 20px;
 }
 .contact-info > p {

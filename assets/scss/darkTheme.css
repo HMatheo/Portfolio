@@ -14,6 +14,8 @@ body.dark {
 }
 .dark h1,
 .dark h3,
+.dark h4,
+.dark h2,
 .dark p,
 .dark a {
   color: rgb(193, 204, 237);
@@ -51,6 +53,9 @@ body.dark {
 .dark .featured-text-btn > .btn:hover {
   background: rgb(255, 255, 255);
   color: rgb(40, 40, 51);
+}
+.dark .experience .timeline .timeline-text {
+  background: rgb(50, 51, 60);
 }
 
 /*# sourceMappingURL=darkTheme.css.map */

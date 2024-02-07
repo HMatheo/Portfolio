@@ -22,6 +22,8 @@ body.dark {
 
     h1,
     h3,
+    h4,
+    h2,
     p,
     a {
         color: $text-color-black;
@@ -73,5 +75,9 @@ body.dark {
                 color: $dark-color;
             }
         }
+    }
+
+    .experience .timeline .timeline-text{
+        background: $card-black;
     }
 }

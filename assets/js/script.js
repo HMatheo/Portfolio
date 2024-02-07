@@ -1,4 +1,4 @@
-/* ----- NAVIGATION BAR FUNCTION ----- */
+/* navbar */
 function menuFunction(){
     var menuBtn = document.getElementById("myNavMenu");
 
@@ -34,14 +34,14 @@ var typingEffect = new Typed(".typedText", {
     backDelay : 2000
 })
 
-/* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
+/* SCROLL REVEAL ANIMATION */
 const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',
     duration: 2000,
     reset: true
 })
-/* -- HOME -- */
+/* start */
 sr.reveal('.featured-text-card',{})
 sr.reveal('.featured-name',{delay: 100})
 sr.reveal('.featured-text-info',{delay: 200})
@@ -49,12 +49,11 @@ sr.reveal('.featured-text-btn',{delay: 200})
 sr.reveal('.social_icons',{delay: 200})
 sr.reveal('.featured-image',{delay: 300})
 
-/* -- PROJECT BOX -- */
+/* projects */
 sr.reveal('.project-box',{interval: 200})
-/* -- HEADINGS -- */
 sr.reveal('.top-header',{})
-/* ----- ## -- SCROLL REVEAL LEFT_RIGHT ANIMATION -- ## ----- */
-/* -- ABOUT INFO & CONTACT INFO -- */
+/* scroll left/right */
+/* -- about/contact */
 const srLeft = ScrollReveal({
     origin: 'left',
     distance: '80px',
@@ -62,11 +61,11 @@ const srLeft = ScrollReveal({
     reset: true
 })
 
-srLeft.reveal('.about-info',{delay: 100})
-srLeft.reveal('.contact-info',{delay: 100})
-/* -- ABOUT SKILLS & FORM BOX -- */
+sr.reveal('.about-info',{delay: 100})
+sr.reveal('.contact-info',{delay: 100})
+/* -- about skills -- */
 const srRight = ScrollReveal({
-    origin: 'right',
+    origin: 'left',
     distance: '80px',
     duration: 2000,
     reset: true
@@ -92,3 +91,13 @@ function scrollActive() {
     })
 }
 window.addEventListener('scroll', scrollActive)
+
+document.addEventListener("DOMContentLoaded", function() {
+    const downloadButtons = document.querySelectorAll(".btn");
+
+    downloadButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+            window.location.href = "assets/pdf/CV.pdf";
+        });
+    });
+});

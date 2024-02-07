@@ -1,5 +1,25 @@
 @import "var";
 
+.btn-contact {
+    font-weight: 500;
+    padding: 12px 20px;
+    background: #efefef;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+
+    > i {
+        margin-left: 10px;
+    }
+
+    &:hover {
+        background: $second-color;
+        color: $color-white;
+    }
+}
+
+
 .contactDiv{
     padding-inline: 10vw;
 }
@@ -21,7 +41,7 @@
 
     > {
         h2 {
-            color: var(--color-white);
+            color: $color-white;
             margin-bottom: 20px;
         }
 

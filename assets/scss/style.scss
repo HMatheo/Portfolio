@@ -113,21 +113,23 @@ h3{
     }
 }
 
-/* query 900px */
-@media only screen and (max-width: 900px) {
-    //.nav-button {
-    //    display: none;
-    //}
-
+/* query 1150px */
+@media only screen and (max-width: 1150px) {
     .nav-button {
-        display: flex;
-        order: 3; /* Changer l'ordre d'affichage en dernier */
-    }
-
-    /* Ajouter la règle suivante pour masquer le bouton "Download my CV" */
-    .btn {
         display: none;
     }
+    .nav-menu.responsive{
+        left: 0;
+    }
+
+    //.nav-button {
+    //    display: flex;
+    //    order: 3;
+    //}
+    //
+    //.btn {
+    //    display: none;
+    //}
 
     .nav-menu {
         &.responsive {
@@ -156,7 +158,6 @@ h3{
         display: flex;
         align-items: center;
         justify-content: center;
-        order: 1;
     }
 
     .featured-box {
@@ -218,7 +219,7 @@ h3{
 .active-link{
     position: relative;
     color: $first-color;
-    transition: .3;
+    transition: .3s;
 
     &:after{
         content: '';
@@ -249,3 +250,70 @@ h3{
         width: 100%;
     }
 }
+
+#contact_section {
+    .content.leaning {
+        padding: 40px 0 40px 0;
+    }
+
+    .contact_content, .social_line {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .social_link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 25px 10px 25px 25px;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(28, 28, 51, 0.2);
+        gap: 15px;
+        text-decoration: none;
+        transition: padding 0.5s ease-in-out;
+
+        &:hover {
+            padding-right: 25px;
+        }
+
+        img {
+            width: 50px;
+        }
+
+        .social_text {
+            overflow: hidden;
+            width: 0;
+            transition: width 0.5s ease-in-out;
+        }
+
+        &:hover .social_text {
+            width: var(--size);
+        }
+
+        .social_text span {
+            font-size: 20px;
+            color: #425466;
+            white-space: nowrap;
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    #contact_section .contact_content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #contact_section .social_link:hover {
+        padding-right: 10px;
+
+        .social_text {
+            width: 0;
+        }
+    }
+}
+
