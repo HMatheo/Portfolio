@@ -101,3 +101,25 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+// script.js
+function copyText(event) {
+    var element = event.currentTarget;
+    var textToCopy = element.getAttribute('data-text-to-copy');
+    var tempInput = document.createElement('input');
+    tempInput.setAttribute('value', textToCopy);
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempInput);
+
+    // Afficher le message
+    var copyMessage = document.getElementById('copyMessage');
+    copyMessage.textContent = 'Texte copié : ' + textToCopy;
+    copyMessage.style.display = 'block';
+
+    // Masquer le message après un certain délai (par exemple, 3 secondes)
+    setTimeout(function() {
+        copyMessage.style.display = 'none';
+    }, 3000);
+}

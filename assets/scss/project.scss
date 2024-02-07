@@ -20,7 +20,7 @@
     flex-direction: column;
     width: 30%;
     height: 250px;
-    background: var(--color-white);
+    background: $color-white;
     border-radius: 20px;
     box-shadow: 1px 8px 10px 2px $first-shadow-color;
     overflow: hidden;
@@ -65,13 +65,13 @@
 
 .project-box:hover.project-box {
     i {
-        color: var(--color-white);
+        color: $color-white;
         z-index: 2;
     }
 
     > {
         h3, label {
-            color: var(--color-white);
+            color: $color-white;
             z-index: 2;
         }
     }

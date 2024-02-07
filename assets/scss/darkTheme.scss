@@ -66,10 +66,10 @@ body.dark {
 
     .featured-text-btn {
         > .btn {
-            //border: 1px solid $green-black;
-            //background-color: $body-black;
-            background: $green-black;
-            color: $dark-color;
+            border: 1px solid $green-black;
+            background-color: $body-black;
+            //background: $green-black;
+            color: $color-white;
             &:hover {
                 background: $color-white;
                 color: $dark-color;
@@ -80,4 +80,51 @@ body.dark {
     .experience .timeline .timeline-text{
         background: $card-black;
     }
+
+    input {
+        &[type="text"], &[type="email"] {
+            color: $color-white;
+        }
+    }
+
+    textarea {
+        color: #fff;
+    }
+
+    .contact-info{
+        background: $card-black;
+        box-shadow: 1px 8px 10px 2px $first-shadow-color;
+        overflow: hidden;
+
+        > {
+            h2 {
+                color: $color-white;
+                margin-bottom: 20px;
+            }
+
+            p {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: $color-white;
+                margin-block: 5px;
+            }
+        }
+
+        p > i {
+            font-size: 18px;
+        }
+
+        &::after {
+            background: $color-white;
+        }
+
+        &:hover.contact-info {
+            h2, p, i {
+                color: #777;
+                z-index: 2;
+            }
+        }
+    }
+
 }
