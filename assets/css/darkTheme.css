@@ -11,6 +11,12 @@ body.dark {
 .dark .icon {
   background-color: white; }
 
+.dark .icon .uil {
+  color: #000000; }
+
+.dark .icon .uil:hover {
+  color: #4adfba; }
+
 .dark h1,
 .dark h3,
 .dark h4,
@@ -30,7 +36,6 @@ body.dark {
 
 .dark .btn__indicator {
   transform: translateX(5em);
-  /* Modifier la translation */
   background-color: #282833;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3); }
 

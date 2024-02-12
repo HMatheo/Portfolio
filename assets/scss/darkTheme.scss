@@ -18,6 +18,14 @@ body.dark {
 
     .icon {
         background-color: white;
+
+        .uil{
+            color: $color-black;
+
+            &:hover {
+                color: $green-black;
+            }
+        }
     }
 
     h1,
@@ -44,7 +52,6 @@ body.dark {
     .btn__indicator {
         transform: translateX(5em);
 
-        /* Modifier la translation */
         background-color: $dark-color;
         box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
     }
@@ -126,5 +133,4 @@ body.dark {
             }
         }
     }
-
 }

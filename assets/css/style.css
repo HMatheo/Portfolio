@@ -8,6 +8,9 @@
 html {
   scroll-behavior: smooth; }
 
+a:visited {
+  color: inherit; }
+
 ::-webkit-scrollbar {
   width: 10px;
   border-radius: 25px; }
@@ -86,6 +89,18 @@ h3 {
   .image, .image img {
     width: 320px;
     height: 320px; } }
+
+#copyMessage {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); }
 
 /* query 1150px */
 @media only screen and (max-width: 1150px) {
@@ -219,18 +234,6 @@ h3 {
   font-size: 20px;
   color: #425466;
   white-space: nowrap; }
-
-#copyMessage {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #ffffff;
-  padding: 10px 20px;
-  border: 1px solid #cccccc;
-  border-radius: 5px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); }
 
 @media screen and (max-width: 780px) {
   #contact_section .contact_content {
