@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,18 +13,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
 
     <!-- css -->
-    <link rel="stylesheet" href="assets/scss/nav.css">
-    <link rel="stylesheet" href="assets/scss/start.css">
-    <link rel="stylesheet" href="assets/scss/style.css">
-    <link rel="stylesheet" href="assets/scss/var.css">
-    <link rel="stylesheet" href="assets/scss/about.css">
-    <link rel="stylesheet" href="assets/scss/darkTheme.css">
-    <link rel="stylesheet" href="assets/css/loader.css">
-    <link rel="stylesheet" href="assets/scss/project.css">
-    <link rel="stylesheet" href="assets/scss/contact.css">
-    <link rel="stylesheet" href="assets/scss/footer.css">
-    <link rel="stylesheet" href="assets/scss/preloader.css">
-    <link rel="stylesheet" href="assets/scss/timeline.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/start.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/var.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/darkTheme.css">
+    <link rel="stylesheet" href="assets/css/project.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <link rel="stylesheet" href="assets/css/timeline.css">
 
 
     <!-- favicon -->
@@ -34,167 +33,218 @@
 </head>
 <body>
 
-    <div class="container">
-        <!-- header -->
-        <nav id="header">
-            <div class="nav-logo">
-                <p class="nav-name">Mathéo</p>
-                <span>.</span>
-            </div>
-            <div class="nav-menu" id="myNavMenu">
-                <ul class="nav_menu_list">
-                    <li class="nav_list">
-                        <a href="#home" class="nav-link active-link">Home</a>
-                        <div class="circle"></div>
-                    </li>
-                    <li class="nav_list">
-                        <a href="#about" class="nav-link">About</a>
-                        <div class="circle"></div>
-                    </li>
-                    <li class="nav_list">
-                        <a href="#projects" class="nav-link">Projects</a>
-                        <div class="circle"></div>
-                    </li>
-                    <li class="nav_list">
-                        <a href="#experience" class="nav-link">Experiences</a>
-                    </li>
-                    <li class="nav_list">
-                        <a href="#contact" class="nav-link">Contact</a>
-                        <div class="circle"></div>
-                    </li>
-                </ul>
-            </div>
-            <div class="nav-button">
-                <button class="btn">Download my CV <i class="uil uil-file-alt"></i></button>
-                <div class="mode">
-                    <div class="moon-sun" id="toggle-switch">
-                        <i class="fa fa-moon" id="moon"></i>
-                        <i class="fa fa-sun" id="sun"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="nav-menu-btn">
-                <i class="uil uil-bars" onclick="menuFunction()"></i>
-            </div>
-        </nav>
-
-        <div class="start">
-            <!-- feature box -->
-            <section class="featured-box" id="home">
-                <div class="featured-text">
-                    <div class="featured-text-card">
-                        <span>Mathéo Hersan</span>
-                    </div>
-                    <div class="featured-name">
-                        <p>I'm a <span class="typedText"></span></p>
-                    </div>
-                    <div class="featured-text-info">
-                        <p>Computer science student who love to writing code and learning new features</p>
-                    </div>
-                    <div class="featured-text-btn">
-                        <div class="scroll-icon-box">
-                            <a href="#about" class="scroll-btn">
-                                <i class="uil uil-mouse-alt"></i>
-                                <p>Get started</p>
-                            </a>
-                        </div>
-                        <button class="btn">Download my CV <i class="uil uil-file-alt"></i> </button>
-                    </div>
-                    <div class="social_icons">
-                        <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-                        <div class="icon"><i class="uil uil-github-alt"></i></div>
-                    </div>
-                </div>
-                <div class="featured-image">
-                    <div class="image">
-                        <img src="assets/ressources/images/avatar.jpg" alt="avatar">
-                    </div>
-                </div>
-            </section>
-
+<div class="container">
+    <!-- header -->
+    <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Mathéo</p>
+            <span>.</span>
         </div>
-
-            <!-- About -->
-        <div class="aboutDiv">
-            <section class="section" id="about">
-                <div class="top-header">
-                    <h1>About Me</h1>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#experience" class="nav-link">Experiences</a>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn">Download my CV <i class="uil uil-file-alt"></i></button>
+            <div class="mode">
+                <div class="moon-sun" id="toggle-switch">
+                    <i class="fa fa-moon" id="moon"></i>
+                    <i class="fa fa-sun" id="sun"></i>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="about-info">
-                            <h3>Who am I</h3>
-                            <p>I'm a computer science student. I'm currently developing projects mainly in C.
-                                As far as web development is concerned, I mainly use HTML CSS/SCSS and JavaScript, but I plan to learn frameworks such as React.
-                            </p>
-                            <div class="about-btn">
-                                <button class="btn">Download my CV <i class="uil uil-import"></i></button>
-                            </div>
+            </div>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="menuFunction()"></i>
+        </div>
+    </nav>
+
+    <div class="start">
+        <!-- feature box -->
+        <section class="featured-box" id="home">
+            <div class="featured-text">
+                <div class="featured-text-card">
+                    <span>Mathéo Hersan</span>
+                </div>
+                <div class="featured-name">
+                    <p>I'm a <span class="typedText"></span></p>
+                </div>
+                <div class="featured-text-info">
+                    <p>Computer science student who love to writing code and learning new features</p>
+                </div>
+                <div class="featured-text-btn">
+                    <div class="scroll-icon-box">
+                        <a href="#about" class="scroll-btn">
+                            <i class="uil uil-mouse-alt"></i>
+                            <p>Get started</p>
+                        </a>
+                    </div>
+                    <button class="btn">Download my CV <i class="uil uil-file-alt"></i> </button>
+                </div>
+                <div class="social_icons">
+                    <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                    <div class="icon"><i class="uil uil-github-alt"></i></div>
+                </div>
+            </div>
+            <div class="featured-image">
+                <div class="image">
+                    <img src="assets/ressources/images/avatar.jpg" alt="avatar">
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- About -->
+    <div class="aboutDiv">
+        <section class="section" id="about">
+            <div class="top-header">
+                <h1>About Me</h1>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="about-info">
+                        <h3>Who am I</h3>
+                        <p>I'm a computer science student. I'm currently developing projects mainly in C.
+                            As far as web development is concerned, I mainly use HTML CSS/SCSS and JavaScript, but I plan to learn frameworks such as React.
+                        </p>
+                        <div class="about-btn">
+                            <button class="btn">Download my CV <i class="uil uil-import"></i></button>
                         </div>
                     </div>
-                    <div class="col">
+                </div>
+                <div class="col">
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3>Frontend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>SCSS</span>
+                            <span>JavaScript</span>
+                        </div>
                         <div class="skills-box">
                             <div class="skills-header">
-                                <h3>Frontend</h3>
+                                <h3>Backend</h3>
                             </div>
                             <div class="skills-list">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>SCSS</span>
-                                <span>JavaScript</span>
+                                <span>PHP</span>
+                                <span>Python</span>
+                                <span>C++</span>
                             </div>
-                            <div class="skills-box">
-                                <div class="skills-header">
-                                    <h3>Backend</h3>
-                                </div>
-                                <div class="skills-list">
-                                    <span>PHP</span>
-                                    <span>Python</span>
-                                    <span>C++</span>
-                                </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Database</h3>
                             </div>
-                            <div class="skills-box">
-                                <div class="skills-header">
-                                    <h3>Database</h3>
-                                </div>
-                                <div class="skills-list">
-                                    <span>SQL</span>
-                                    <span>PostgreSQL</span>
-                                    <span>MySQL</span>
-                                </div>
+                            <div class="skills-list">
+                                <span>SQL</span>
+                                <span>PostgreSQL</span>
+                                <span>MySQL</span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+    </div>
 
-        <div class="projectsDiv">
-            <section class="section" id="projects">
-                <div class="top-header">
-                    <h1>My projects</h1>
-                </div>
-                <div class="project-container">
-                    <div class="project-box">
-                        <i class="uil uil-briefcase-alt"></i>
-                        <h3>Completed</h3>
-                        <label>15+ Finished Projects</label>
-                    </div>
-                    <div class="project-box">
-                        <i class="uil uil-users-alt"></i>
-                        <h3>Clients</h3>
-                        <label>15+ Finished Projects</label>
-                    </div>
-                    <div class="project-box">
-                        <i class="uil uil-award"></i>
-                        <h3>Experience</h3>
-                        <label>7+ Years in the field</label>
-                    </div>
-                </div>
-            </section>
-        </div>
+    <div class="projectsDiv">
+        <section class="section" id="projects">
+            <div class="top-header">
+                <h1>My projects</h1>
+            </div>
+            <div class="project-container">
+                <div class="card-content">
+                    <header class="card-header">
+                        <span>Github link</span>
+                        <div class="card-social">
+                            <a href="https://github.com/HMatheo/MapManga" target="_blank">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+                    </header>
 
-        <div class="experiencesDiv">
+                    <div class="card-data">
+                        <div class="card-image">
+                            <div class="card-mask">
+                                <a href="https://github.com/HMatheo/MapManga">
+                                    <img src="assets/ressources/images/mapmanga.svg" alt="image" class="card__img">
+                                </a>
+                            </div>
+                        </div>
+                        <h2 class="card-name">MapManga</h2>
+                        <h3 class="card-resume">MapManga is an app for anime and manga fans to organize their watched or read series using a list-based system.</h3>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <header class="card-header">
+                        <span>Github link</span>
+                        <div class="card-social">
+                            <a href="https://github.com/HMatheo/Portfolio" target="_blank">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+                    </header>
+
+                    <div class="card-data">
+                        <div class="card-image">
+                            <div class="card-mask">
+                                <a href="https://github.com/HMatheo/Portfolio">
+                                    <img src="assets/ressources/images/logoPortfolio.jpg" alt="image" class="card__img">
+                                </a>
+                            </div>
+                        </div>
+                        <h2 class="card-name">Portfolio</h2>
+                        <h3 class="card-resume">This is my portfolio, it's a simple website to present my projects and my experiences.</h3>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <header class="card-header">
+                        <span>Github link</span>
+                        <div class="card-social">
+                            <a href="https://github.com/HMatheo/SAE1.02" target="_blank">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+                    </header>
+
+                    <div class="card-data">
+                        <div class="card-image">
+                            <div class="card-mask">
+                                <a href="https://github.com/HMatheo/SAE1.02">
+                                    <img src="assets/ressources/images/logoPert.jpeg" alt="image" class="card__img">
+                                </a>
+                            </div>
+                        </div>
+                        <h2 class="card-name">PERT Method Project (C Language)</h2>
+                        <h3 class="card-resume">Implementation of the PERT method for time planning of tasks in a construction project using C language.</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="experiencesDiv">
         <section id="experience" class="s-resume target-section">
             <div class="top-header">
                 <h1>Professional experiences</h1>
@@ -255,107 +305,100 @@
                 </div>
             </div>
         </section>
-        </div>
+    </div>
 
-        <div class="contactDiv">
-            <section class="section" id="contact">
-                <div class="top-header">
-                    <h1>Get in touch</h1>
-                    <span>Do you have a question, contact me here</span>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="contact-info">
-                            <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                            <p><i class="uil uil-envelope"></i>Email: matheo.hersan@gmail.com</p>
-                            <p><i class="uil uil-phone"></i>  Tel: +33O6327787420</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <form action="https://api.web3forms.com/submit" method="POST">
-                            <div class="form-control">
-                                <div class="form-inputs">
-                                    <input type="hidden" name="access_key" value="b3e88086-a20e-4df9-acc6-38be37d26db9">
-                                    <input type="text" name="name" class="input-field" placeholder="Name">
-                                    <input type="email" name="email" class="input-field" placeholder="Email">
-                                </div>
-                                <div class="text-area">
-                                    <textarea placeholder="Message" name="message" required></textarea>
-                                </div>
-                                <input type="hidden" name="replyto" value="customer@example.com">
-                                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                                <div class="form-button">
-                                    <button class="btn-contact" type="submit">Send <i class="uil uil-message"></i></button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <section class="section" id="contact_section">
-                    <div class="content leaning">
-                        <div class="top-header">
-                            <h1>You can also contact me here:</h1>
-                        </div>
-                        <div class="contact_content">
-                            <div class="social_line">
-                                <a class="social_link" href="https://www.linkedin.com/in/mathéo-hersan/" target="_blank" style="--size: 190.13px;">
-                                    <img src="assets/ressources/images/Linkedin.svg" alt="linkedin" width="50px" height="50px"/>
-                                    <div class="social_text">
-                                        <span>in/mathéo-hersan</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="social_line">
-                                <a class="social_link" href="https://github.com/HMatheo" target="_blank" style="--size: 90.65px;">
-                                    <img src="assets/ressources/images/GitHub.svg" alt="github" width="50px" height="50px"/>
-                                    <div class="social_text">
-                                        <span>HMatheo</span>
-                                    </div>
-                                </a>
-                                <a class="social_link" href="javascript:void(0);" data-text-to-copy=".balkh" onclick="copyText(event)" style="--size: 75.65px;">
-                                    <img src="assets/ressources/images/Discord.svg" alt="discord" width="50px" height="50px"/>
-                                    <div class="social_text">
-                                        <span>.balkh</span>
-                                    </div>
-                                </a>
-                                <div id="copyMessage"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </section>
-        </div>
-
-        <footer>
-            <div class="top-footer">
-                <p>Mathéo Hersan .</p>
+    <div class="contactDiv">
+        <section class="section" id="contact">
+            <div class="top-header">
+                <h1>Get in touch</h1>
+                <span>Do you have a question, contact me here</span>
             </div>
-            <div class="middle-footer">
+            <div class="row">
+                <div class="col">
+                    <div class="contact-info">
+                        <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                        <p><i class="uil uil-envelope"></i>Email: matheo.hersan@gmail.com</p>
+                        <p><i class="uil uil-phone"></i>  Tel: +33O6327787420</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <div class="form-control">
+                            <div class="form-inputs">
+                                <input type="hidden" name="access_key" value="b3e88086-a20e-4df9-acc6-38be37d26db9">
+                                <input type="text" name="name" class="input-field" placeholder="Name">
+                                <input type="email" name="email" class="input-field" placeholder="Email">
+                            </div>
+                            <div class="text-area">
+                                <textarea placeholder="Message" name="message" required></textarea>
+                            </div>
+                            <input type="hidden" name="replyto" value="customer@example.com">
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                            <div class="form-button">
+                                <button class="btn-contact" type="submit">Send <i class="uil uil-message"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <section class="section" id="contact_section">
+                <div class="content leaning">
+                    <div class="top-header">
+                        <h1>You can also contact me here:</h1>
+                    </div>
+                    <div class="contact_content">
+                        <div class="social_line">
+                            <a class="social_link" href="https://www.linkedin.com/in/mathéo-hersan/" target="_blank" style="--size: 190.13px;">
+                                <img src="assets/ressources/images/Linkedin.svg" alt="linkedin" width="50px" height="50px"/>
+                                <div class="social_text">
+                                    <span>in/mathéo-hersan</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="social_line">
+                            <a class="social_link" href="https://github.com/HMatheo" target="_blank" style="--size: 90.65px;">
+                                <img src="assets/ressources/images/GitHub.svg" alt="github" width="50px" height="50px"/>
+                                <div class="social_text">
+                                    <span>HMatheo</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <footer>
+        <div class="top-footer">
+            <p>Mathéo Hersan .</p>
+        </div>
+        <div class="middle-footer">
                 <span>
                     Made with <i class="fa fa-heart pulse"></i> in <a href="#">France 🇫🇷</a>
                 </span>
-            </div>
-            <div class="footer-social-icons">
-                <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-                <div class="icon"><i class="uil uil-github-alt"></i></div>
-            </div>
-            <div class="bottom-footer">
-                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Mathéo Hersan</a> All rights reserved</p>
-            </div>
-        </footer>
+        </div>
+        <div class="footer-social-icons">
+            <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+            <div class="icon"><i class="uil uil-github-alt"></i></div>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Mathéo Hersan</a> All rights reserved</p>
+        </div>
+    </footer>
 
 
-    </div>
+</div>
 
-    <!-- typeJS -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<!-- typeJS -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-    <!-- scrollJS -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+<!-- scrollJS -->
+<script src="https://unpkg.com/scrollreveal"></script>
 
-    <!-- script -->
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/darkTheme.js"></script>
-    <script src="assets/js/preload.js"></script>
+<!-- script -->
+<script src="assets/js/script.js"></script>
+<script src="assets/js/darkTheme.js"></script>
+<script src="assets/js/preload.js"></script>
 </body>
 </html>

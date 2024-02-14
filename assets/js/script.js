@@ -50,7 +50,7 @@ sr.reveal('.social_icons',{delay: 200})
 sr.reveal('.featured-image',{delay: 300})
 
 /* projects */
-sr.reveal('.project-box',{interval: 200})
+sr.reveal('.card-content',{interval: 200})
 sr.reveal('.top-header',{})
 /* scroll left/right */
 /* -- about/contact */

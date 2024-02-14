@@ -4,6 +4,12 @@
     padding-inline: 10vw;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .project-container {
     display: flex;
     width: 100%;
@@ -12,67 +18,59 @@
     flex-wrap: wrap;
 }
 
-.project-box {
+.card-content{
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     width: 30%;
-    height: 250px;
-    background: $color-white;
-    border-radius: 20px;
-    box-shadow: 1px 8px 10px 2px $first-shadow-color;
-    overflow: hidden;
-
-    > i {
-        font-size: 50px;
-        color: #00B5E7;
-        margin-bottom: 25px;
-    }
-
-    label {
-        font-size: 15px;
-        color: #777;
-    }
-
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: -100%;
-        background: $second-color;
-        width: 100%;
-        height: 100%;
-        transition: .4s;
-        z-index: 1;
-    }
+    background-color: var(--container-color);
+    box-shadow: 0 16px 32px hsla(230, 50%, 20%, .1);
+    padding: 2rem 1.5rem;
+    border-radius: 1.5rem;
 }
 
-.contact-info::after {
-    content: "";
-    position: absolute;
-    bottom: -100%;
-    background: $second-color;
-    width: 100%;
-    height: 100%;
-    transition: .4s;
-    z-index: 1;
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
-.project-box:hover.project-box::after, .contact-info:hover.contact-info::after {
-    bottom: 0;
+.card-header span {
+    color: var(--title-color);
+    font-weight: 500;
 }
 
-.project-box:hover.project-box {
-    i {
-        color: $color-white;
-        z-index: 2;
-    }
+.card-social {
+    display: flex;
+    column-gap: .75rem;
+}
 
-    > {
-        h3, label {
-            color: $color-white;
-            z-index: 2;
-        }
-    }
+.card__social a {
+    font-size: 1.25rem;
+    color: var(--title-color);
+}
+
+.card-image {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto 1rem;
+}
+
+.card-data {
+    text-align: center;
+}
+
+.card-name {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    font-weight: 600;
+    margin-bottom: .25rem;
+}
+
+.card-resume {
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    margin-bottom: 2rem;
 }

@@ -1,97 +1,140 @@
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(230, 100%, 50%);
+  --second-color: hsl(150, 100%, 38%);
+  --title-color: hsl(230, 24%, 12%);
+  --text-color: hsl(230, 4%, 60%);
+  --gray-color: hsl(230, 24%, 88%);
+  --border-color: hsl(230, 4%, 92%);
+  --body-color: hsl(230, 100%, 98%);
+  --container-color: hsl(0, 0%, 100%);
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Syne", sans-serif;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+}
+
 /* -------------- DARKMODE -------------- */
 body.dark {
-  background-color: #2b2d35; }
+  background-color: rgb(43, 45, 53);
+}
 
 .dark footer {
-  background-color: #2b2d35; }
-
+  background-color: rgb(43, 45, 53);
+}
 .dark footer a {
-  color: #c1cced; }
-
+  color: rgb(193, 204, 237);
+}
 .dark .icon {
-  background-color: white; }
-
+  background-color: white;
+}
 .dark .icon .uil {
-  color: #000000; }
-
+  color: #000000;
+}
 .dark .icon .uil:hover {
-  color: #4adfba; }
-
+  color: rgb(74, 223, 186);
+}
 .dark h1,
+.dark h2,
+.dark a {
+  color: #fff;
+}
 .dark h3,
 .dark h4,
-.dark h2,
-.dark p,
-.dark a {
-  color: #c1cced; }
-
+.dark p {
+  color: rgb(193, 204, 237);
+}
 .dark nav {
-  background: #2b2d35; }
-
+  background: rgb(43, 45, 53);
+}
+.dark .nav-menu-btn {
+  color: white;
+}
 .dark .nav-logo span {
-  color: #4adfba; }
-
+  color: rgb(74, 223, 186);
+}
+.dark .nav-button .btn {
+  background: rgb(74, 223, 186);
+  color: rgb(40, 40, 51);
+}
+.dark .nav-button .btn:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(40, 40, 51);
+}
 .dark .about-info {
-  background: #32333c; }
-
+  background: rgb(50, 51, 60);
+}
 .dark .btn__indicator {
   transform: translateX(5em);
-  background-color: #282833;
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3); }
-
+  background-color: rgb(40, 40, 51);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+}
 .dark .btn__icon {
-  color: #fff; }
-
+  color: #fff;
+}
 .dark .about-btn > .btn {
-  background: #4adfba;
-  color: #282833; }
-
+  background: rgb(74, 223, 186);
+  color: rgb(40, 40, 51);
+}
 .dark .about-btn > .btn:hover {
-  background: white;
-  color: #282833; }
-
+  background: rgb(255, 255, 255);
+  color: rgb(40, 40, 51);
+}
 .dark .featured-text-btn > .btn {
-  border: 1px solid #4adfba;
-  background-color: #2b2d35;
-  color: white; }
-
+  border: 1px solid rgb(74, 223, 186);
+  background-color: rgb(43, 45, 53);
+  color: rgb(255, 255, 255);
+}
 .dark .featured-text-btn > .btn:hover {
-  background: white;
-  color: #282833; }
-
+  background: rgb(255, 255, 255);
+  color: rgb(40, 40, 51);
+}
 .dark .experience .timeline .timeline-text {
-  background: #32333c; }
-
+  background: rgb(50, 51, 60);
+}
 .dark input[type=text], .dark input[type=email] {
-  color: white; }
-
+  color: rgb(255, 255, 255);
+}
 .dark textarea {
-  color: #fff; }
-
+  color: #fff;
+}
+.dark .card-content {
+  background-color: rgb(50, 51, 60);
+  box-shadow: 0 16px 32px rgba(40, 40, 51, 0.1);
+}
+.dark .card-content .card-header {
+  border-bottom: 1px solid rgb(0, 201, 255);
+}
 .dark .contact-info {
-  background: #32333c;
+  background: rgb(50, 51, 60);
   box-shadow: 1px 8px 10px 2px rgba(0, 0, 0, 0.1);
-  overflow: hidden; }
-
+  overflow: hidden;
+}
 .dark .contact-info > h2 {
-  color: white;
-  margin-bottom: 20px; }
-
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
 .dark .contact-info > p {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: white;
-  margin-block: 5px; }
-
+  color: rgb(255, 255, 255);
+  margin-block: 5px;
+}
 .dark .contact-info p > i {
-  font-size: 18px; }
-
+  font-size: 18px;
+}
 .dark .contact-info::after {
-  background: white; }
-
+  background: rgb(255, 255, 255);
+}
 .dark .contact-info:hover.contact-info h2, .dark .contact-info:hover.contact-info p, .dark .contact-info:hover.contact-info i {
   color: #777;
-  z-index: 2; }
+  z-index: 2;
+}
+.dark .scroll-btn p {
+  color: black;
+}
 
 /*# sourceMappingURL=darkTheme.css.map */

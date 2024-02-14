@@ -29,11 +29,14 @@ body.dark {
     }
 
     h1,
+    h2,
+    a {
+        color: $dark-icon-color;
+    }
+
     h3,
     h4,
-    h2,
-    p,
-    a {
+    p{
         color: $text-color-black;
     }
 
@@ -41,8 +44,23 @@ body.dark {
         background: $body-black;
     }
 
+    .nav-menu-btn{
+        color: white;
+    }
+
     .nav-logo span {
         color: $green-black;
+    }
+
+    .nav-button {
+        .btn{
+            background: $green-black;
+            color: $dark-color;
+            &:hover {
+                background: $color-white;
+                color: $dark-color;
+            }
+        }
     }
 
     .about-info {
@@ -98,6 +116,15 @@ body.dark {
         color: #fff;
     }
 
+    .card-content{
+        background-color: $card-black;
+        box-shadow: 0 16px 32px rgba(40, 40, 51, 0.1);
+
+        .card-header {
+            border-bottom: 1px solid $second-color;
+        }
+    }
+
     .contact-info{
         background: $card-black;
         box-shadow: 1px 8px 10px 2px $first-shadow-color;
@@ -131,6 +158,12 @@ body.dark {
                 color: #777;
                 z-index: 2;
             }
+        }
+    }
+
+    .scroll-btn{
+        p{
+            color: black;
         }
     }
 }

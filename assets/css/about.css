@@ -1,5 +1,24 @@
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(230, 100%, 50%);
+  --second-color: hsl(150, 100%, 38%);
+  --title-color: hsl(230, 24%, 12%);
+  --text-color: hsl(230, 4%, 60%);
+  --gray-color: hsl(230, 24%, 88%);
+  --border-color: hsl(230, 4%, 92%);
+  --body-color: hsl(230, 100%, 98%);
+  --container-color: hsl(0, 0%, 100%);
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Syne", sans-serif;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+}
+
 .aboutDiv {
-  padding-inline: 10vw; }
+  padding-inline: 10vw;
+}
 
 .about-info {
   position: relative;
@@ -9,42 +28,47 @@
   padding-block: 30px 70px;
   padding-inline: 20px;
   width: 100%;
-  background: white;
+  background: rgb(255, 255, 255);
   box-shadow: 1px 8px 10px 2x rgba(0, 0, 0, 0.1);
-  border-radius: 20px; }
-
+  border-radius: 20px;
+}
 .about-info p {
   text-align: center;
   font-size: 15px;
-  color: #777; }
+  color: #777;
+}
 
 .about-btn button {
   position: absolute;
   right: 20px;
   bottom: 20px;
-  background: #6e57e0;
-  color: white;
-  border-radius: 30px; }
-
+  background: rgb(110, 87, 224);
+  color: rgb(255, 255, 255);
+  border-radius: 30px;
+}
 .about-btn button:hover {
-  background: #285bd4; }
+  background: rgb(40, 91, 212);
+}
 
 .skills-box {
-  margin: 10px; }
+  margin: 10px;
+}
 
 .skills-header {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+}
 
 .skills-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px; }
-
+  gap: 5px;
+}
 .skills-list span {
   font-size: 14px;
-  background: #6e57e0;
-  color: white;
+  background: rgb(110, 87, 224);
+  color: rgb(255, 255, 255);
   padding: 2px 10px;
-  border-radius: 5px; }
+  border-radius: 5px;
+}
 
 /*# sourceMappingURL=about.css.map */

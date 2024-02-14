@@ -1,34 +1,58 @@
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(230, 100%, 50%);
+  --second-color: hsl(150, 100%, 38%);
+  --title-color: hsl(230, 24%, 12%);
+  --text-color: hsl(230, 4%, 60%);
+  --gray-color: hsl(230, 24%, 88%);
+  --border-color: hsl(230, 4%, 92%);
+  --body-color: hsl(230, 100%, 98%);
+  --container-color: hsl(0, 0%, 100%);
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Syne", sans-serif;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+}
+
 .experiencesDiv {
   padding-inline: 10vw;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .experience .timeline {
   position: relative;
-  width: 100%; }
+  width: 100%;
+}
 
 .experience .timeline::after {
   content: "";
   position: absolute;
   width: 2px;
-  background: #4adfba;
+  background: rgb(74, 223, 186);
   top: 0;
   bottom: 0;
   left: 50%;
-  margin-left: -1px; }
+  margin-left: -1px;
+}
 
 .experience .timeline .timeline-item {
   position: relative;
   background: inherit;
   width: 50%;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+}
 
 .experience .timeline .timeline-item.left {
   left: 0;
-  padding-right: 30px; }
+  padding-right: 30px;
+}
 
 .experience .timeline .timeline-item.right {
   left: 50%;
-  padding-left: 30px; }
+  padding-left: 30px;
+}
 
 .experience .timeline .timeline-item::after {
   content: "";
@@ -38,12 +62,14 @@
   top: 48px;
   right: -10px;
   background: #ffffff;
-  border: 2px solid #4adfba;
+  border: 2px solid rgb(74, 223, 186);
   border-radius: 16px;
-  z-index: 1; }
+  z-index: 1;
+}
 
 .experience .timeline .timeline-item.right::after {
-  left: -10px; }
+  left: -10px;
+}
 
 .experience .timeline .timeline-item::before {
   content: "";
@@ -54,11 +80,13 @@
   right: 10px;
   z-index: 1;
   border: 10px solid;
-  border-color: transparent transparent transparent #dddddd; }
+  border-color: transparent transparent transparent #dddddd;
+}
 
 .experience .timeline .timeline-item.right::before {
   left: 10px;
-  border-color: transparent #dddddd transparent transparent; }
+  border-color: transparent #dddddd transparent transparent;
+}
 
 .experience .timeline .timeline-date {
   position: absolute;
@@ -69,15 +97,18 @@
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 1px;
-  z-index: 1; }
+  z-index: 1;
+}
 
 .experience .timeline .timeline-item.left .timeline-date {
   text-align: left;
-  left: calc(100% + 55px); }
+  left: calc(100% + 55px);
+}
 
 .experience .timeline .timeline-item.right .timeline-date {
   text-align: right;
-  right: calc(100% + 55px); }
+  right: calc(100% + 55px);
+}
 
 .experience .timeline .timeline-text {
   padding: 30px;
@@ -85,45 +116,56 @@
   position: relative;
   border-radius: 8px;
   border-right: 5px solid #dddddd;
-  box-shadow: 0 0 60px rgba(0, 0, 0, 0.08); }
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.08);
+}
 
 .experience .timeline .timeline-item.right .timeline-text {
   border-right: none;
-  border-left: 5px solid #dddddd; }
+  border-left: 5px solid #dddddd;
+}
 
 .experience .timeline .timeline-text h2 {
   margin: 0 0 5px 0;
   font-size: 22px;
-  font-weight: 600; }
+  font-weight: 600;
+}
 
 .experience .timeline .timeline-text h4 {
   margin: 0 0 10px 0;
   font-size: 16px;
   font-style: italic;
-  font-weight: 400; }
+  font-weight: 400;
+}
 
 .experience .timeline .timeline-text p {
   margin: 0;
-  font-size: 16px; }
+  font-size: 16px;
+}
 
 @media (max-width: 767.98px) {
   .experience .timeline::after {
-    left: 8px; }
+    left: 8px;
+  }
   .experience .timeline .timeline-item {
     width: 100%;
-    padding-left: 38px; }
+    padding-left: 38px;
+  }
   .experience .timeline .timeline-item.left {
-    padding-right: 0; }
+    padding-right: 0;
+  }
   .experience .timeline .timeline-item.right {
     left: 0%;
-    padding-left: 38px; }
+    padding-left: 38px;
+  }
   .experience .timeline .timeline-item.left::after,
   .experience .timeline .timeline-item.right::after {
-    left: 0; }
+    left: 0;
+  }
   .experience .timeline .timeline-item.left::before,
   .experience .timeline .timeline-item.right::before {
     left: 18px;
-    border-color: transparent #dddddd transparent transparent; }
+    border-color: transparent #dddddd transparent transparent;
+  }
   .experience .timeline .timeline-item.left .timeline-date,
   .experience .timeline .timeline-item.right .timeline-date {
     position: relative;
@@ -131,10 +173,13 @@
     right: auto;
     left: 0;
     text-align: left;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+  }
   .experience .timeline .timeline-item.left .timeline-text,
   .experience .timeline .timeline-item.right .timeline-text {
     border-right: none;
-    border-left: 5px solid #dddddd; } }
+    border-left: 5px solid #dddddd;
+  }
+}
 
 /*# sourceMappingURL=timeline.css.map */

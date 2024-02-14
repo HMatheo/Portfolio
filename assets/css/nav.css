@@ -1,4 +1,21 @@
-@charset "UTF-8";
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(230, 100%, 50%);
+  --second-color: hsl(150, 100%, 38%);
+  --title-color: hsl(230, 24%, 12%);
+  --text-color: hsl(230, 4%, 60%);
+  --gray-color: hsl(230, 24%, 88%);
+  --border-color: hsl(230, 4%, 92%);
+  --body-color: hsl(230, 100%, 98%);
+  --container-color: hsl(0, 0%, 100%);
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Syne", sans-serif;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+}
+
 /* navbar */
 nav {
   position: fixed;
@@ -7,50 +24,59 @@ nav {
   width: 100%;
   height: 90px;
   line-height: 90px;
-  background: #fafafa;
+  background: rgb(250, 250, 250);
   padding-inline: 9vw;
   transition: 0.3s;
-  z-index: 100; }
+  z-index: 100;
+}
 
 .nav-logo {
-  position: relative; }
+  position: relative;
+}
 
 .nav-name {
   font-size: 30px;
   font-weight: 600;
-  color: #1e9fab; }
+  color: rgb(30, 159, 171);
+}
 
 .nav-logo span {
   position: absolute;
   top: -15px;
   right: -20px;
   font-size: 5em;
-  color: #444444; }
+  color: rgb(68, 68, 68);
+}
 
 .nav-menu, .nav_menu_list {
-  display: flex; }
+  display: flex;
+}
 
 .nav-menu .nav_list {
   list-style: none;
-  position: relative; }
+  position: relative;
+}
 
 .nav-link {
   text-decoration: none;
-  color: #444444;
+  color: rgb(68, 68, 68);
   font-weight: 500;
   padding-inline: 15px;
-  margin-inline: 20px; }
+  margin-inline: 20px;
+}
 
 .nav-menu-btn {
-  display: none; }
-
+  display: none;
+}
 .nav-menu-btn i {
   font-size: 28px;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .mode {
   display: flex;
-  align-items: center; }
+  align-items: center;
+}
 
 .moon-sun {
   position: relative;
@@ -61,24 +87,26 @@ nav {
   width: 40px;
   background: #f5f5f5;
   border-radius: 50%;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .moon-sun :is(#moon, #sun) {
   position: absolute;
   color: black;
-  transition: 0.2s ease-in-out; }
+  transition: 0.2s ease-in-out;
+}
 
 #sun {
-  opacity: 0; }
+  opacity: 0;
+}
 
 .nav-button {
   display: flex;
   align-items: center;
-  /* Aligner les éléments verticalement */ }
+}
 
-/* Ajoutez le code suivant après la définition de .moon-sun dans votre CSS */
 .btn {
   margin-right: 20px;
-  /* Espacement entre les boutons */ }
+}
 
 /*# sourceMappingURL=nav.css.map */

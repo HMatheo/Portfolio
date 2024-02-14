@@ -1,64 +1,94 @@
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(230, 100%, 50%);
+  --second-color: hsl(150, 100%, 38%);
+  --title-color: hsl(230, 24%, 12%);
+  --text-color: hsl(230, 4%, 60%);
+  --gray-color: hsl(230, 24%, 88%);
+  --border-color: hsl(230, 4%, 92%);
+  --body-color: hsl(230, 100%, 98%);
+  --container-color: hsl(0, 0%, 100%);
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Syne", sans-serif;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+}
+
 .projectsDiv {
-  padding-inline: 10vw; }
+  padding-inline: 10vw;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .project-container {
   display: flex;
   width: 100%;
   justify-content: space-between;
   gap: 20px;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+}
 
-.project-box {
+.card-content {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   width: 30%;
-  height: 250px;
-  background: white;
-  border-radius: 20px;
-  box-shadow: 1px 8px 10px 2px rgba(0, 0, 0, 0.1);
-  overflow: hidden; }
+  background-color: var(--container-color);
+  box-shadow: 0 16px 32px hsla(230, 50%, 20%, 0.1);
+  padding: 2rem 1.5rem;
+  border-radius: 1.5rem;
+}
 
-.project-box > i {
-  font-size: 50px;
-  color: #00B5E7;
-  margin-bottom: 25px; }
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
 
-.project-box label {
-  font-size: 15px;
-  color: #777; }
+.card-header span {
+  color: var(--title-color);
+  font-weight: 500;
+}
 
-.project-box::after {
-  content: "";
-  position: absolute;
-  bottom: -100%;
-  background: #00c9ff;
-  width: 100%;
-  height: 100%;
-  transition: 0.4s;
-  z-index: 1; }
+.card-social {
+  display: flex;
+  column-gap: 0.75rem;
+}
 
-.contact-info::after {
-  content: "";
-  position: absolute;
-  bottom: -100%;
-  background: #00c9ff;
-  width: 100%;
-  height: 100%;
-  transition: 0.4s;
-  z-index: 1; }
+.card__social a {
+  font-size: 1.25rem;
+  color: var(--title-color);
+}
 
-.project-box:hover.project-box::after, .contact-info:hover.contact-info::after {
-  bottom: 0; }
+.card-image {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: 0 auto 1rem;
+}
 
-.project-box:hover.project-box i {
-  color: white;
-  z-index: 2; }
+.card-data {
+  text-align: center;
+}
 
-.project-box:hover.project-box > h3, .project-box:hover.project-box > label {
-  color: white;
-  z-index: 2; }
+.card-name {
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.card-resume {
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
 
 /*# sourceMappingURL=project.css.map */
