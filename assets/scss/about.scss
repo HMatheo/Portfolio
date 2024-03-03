@@ -24,19 +24,6 @@
         color: #777;
     }
 }
-.about-btn button {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-
-    background: $first-color;
-    color: $color-white;
-    border-radius: 30px;
-
-    &:hover {
-        background: $first-color-hover;
-    }
-}
 
 //skills
 .skills-box{
@@ -58,3 +45,4 @@
         border-radius: 5px;
     }
 }
+

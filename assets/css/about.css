@@ -38,18 +38,6 @@
   color: #777;
 }
 
-.about-btn button {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  background: rgb(110, 87, 224);
-  color: rgb(255, 255, 255);
-  border-radius: 30px;
-}
-.about-btn button:hover {
-  background: rgb(40, 91, 212);
-}
-
 .skills-box {
   margin: 10px;
 }
