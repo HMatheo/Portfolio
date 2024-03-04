@@ -145,7 +145,7 @@ body.dark {
             }
         }
 
-        p > i {
+        p > ion-icon {
             font-size: 18px;
         }
 
@@ -154,7 +154,7 @@ body.dark {
         }
 
         &:hover.contact-info {
-            h2, p, i {
+            h2, p, ion-icon {
                 color: #777;
                 z-index: 2;
             }

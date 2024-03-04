@@ -25,7 +25,7 @@
   cursor: pointer;
   transition: 0.4s;
 }
-.btn-contact > i {
+.btn-contact > ion-icon {
   margin-left: 10px;
 }
 .btn-contact:hover {
@@ -62,13 +62,13 @@
   color: rgb(255, 255, 255);
   margin-block: 5px;
 }
-.contact-info p > i {
+.contact-info p > ion-icon {
   font-size: 18px;
 }
 .contact-info::after {
   background: rgb(255, 255, 255);
 }
-.contact-info:hover.contact-info h2, .contact-info:hover.contact-info p, .contact-info:hover.contact-info i {
+.contact-info:hover.contact-info h2, .contact-info:hover.contact-info p, .contact-info:hover.contact-info ion-icon {
   color: #777;
   z-index: 2;
 }
@@ -117,7 +117,7 @@ textarea {
 .form-button > .btn:hover {
   background: #00B5E7;
 }
-.form-button i {
+.form-button ion-icon {
   font-size: 18px;
   rotate: -45deg;
 }

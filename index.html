@@ -4,13 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- unicons -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-
     <!-- fontsawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
 
     <!-- css -->
     <link rel="stylesheet" href="assets/css/nav.css">
@@ -22,7 +17,6 @@
     <link rel="stylesheet" href="assets/css/project.css">
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/preloader.css">
     <link rel="stylesheet" href="assets/css/timeline.css">
 
 
@@ -64,16 +58,16 @@
             </ul>
         </div>
         <div class="nav-button">
-            <button class="btn">Download my CV <i class="uil uil-file-alt"></i></button>
+            <button class="btn">Download my CV <i><ion-icon name="download-outline"></ion-icon></i></button>
             <div class="mode">
                 <div class="moon-sun" id="toggle-switch">
-                    <i class="fa fa-moon" id="moon"></i>
-                    <i class="fa fa-sun" id="sun"></i>
+                    <ion-icon name="moon-outline" id="moon"></ion-icon>
+                    <ion-icon name="sunny-outline" id="sun"></ion-icon>
                 </div>
             </div>
         </div>
         <div class="nav-menu-btn">
-            <i class="uil uil-bars" onclick="menuFunction()"></i>
+            <ion-icon name="menu-outline" onclick="menuFunction()"></ion-icon>
         </div>
     </nav>
 
@@ -93,15 +87,15 @@
                 <div class="featured-text-btn">
                     <div class="scroll-icon-box">
                         <a href="#about" class="scroll-btn">
-                            <i class="uil uil-mouse-alt"></i>
+                            <ion-icon name="arrow-down-outline"></ion-icon>
                             <p>Get started</p>
                         </a>
                     </div>
-                    <button class="btn">Download my CV <i class="uil uil-file-alt"></i> </button>
+                    <button class="btn">Download my CV <ion-icon name="download-outline"></ion-icon></button>
                 </div>
                 <div class="social_icons">
-                    <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-                    <div class="icon"><i class="uil uil-github-alt"></i></div>
+                    <div class="icon"><ion-icon name="logo-linkedin"></ion-icon></div>
+                    <div class="icon"><ion-icon name="logo-github"></ion-icon></div>
                 </div>
             </div>
             <div class="featured-image">
@@ -173,7 +167,7 @@
                     <header class="card-header">
                         <div class="card-social">
                             <a href="https://github.com/HMatheo/MapManga" target="_blank">
-                                <i class="uil uil-github-alt"></i>
+                                <ion-icon name="logo-github" class="github-logo"></ion-icon>
                             </a>
                         </div>
                     </header>
@@ -194,7 +188,7 @@
                     <header class="card-header">
                         <div class="card-social">
                             <a href="https://github.com/HMatheo/Portfolio" target="_blank">
-                                <i class="uil uil-github-alt"></i>
+                                <ion-icon name="logo-github" class="github-logo"></ion-icon>
                             </a>
                         </div>
                     </header>
@@ -215,7 +209,7 @@
                     <header class="card-header">
                         <div class="card-social">
                             <a href="https://github.com/HMatheo/SAE1.02" target="_blank">
-                                <i class="uil uil-github-alt"></i>
+                                <ion-icon name="logo-github" class="github-logo"></ion-icon>
                             </a>
                         </div>
                     </header>
@@ -308,9 +302,9 @@
             <div class="row">
                 <div class="col">
                     <div class="contact-info">
-                        <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                        <p><i class="uil uil-envelope"></i>Email: matheo.hersan@gmail.com</p>
-                        <p><i class="uil uil-phone"></i>  Tel: +33O6327787420</p>
+                        <h2>Find Me <ion-icon name="arrow-down-outline"></ion-icon></h2>
+                        <p><ion-icon name="mail-outline"></ion-icon>Email: matheo.hersan@gmail.com</p>
+                        <p><ion-icon name="call-outline"></ion-icon>  Tel: +33O6327787420</p>
                     </div>
                 </div>
                 <div class="col">
@@ -327,7 +321,7 @@
                             <input type="hidden" name="replyto" value="customer@example.com">
                             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                             <div class="form-button">
-                                <button class="btn-contact" type="submit">Send <i class="uil uil-message"></i></button>
+                                <button class="btn-contact" type="submit">Send <ion-icon name="send-outline"></ion-icon></button>
                             </div>
                         </div>
                     </form>
@@ -371,8 +365,8 @@
                 </span>
         </div>
         <div class="footer-social-icons">
-            <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-            <div class="icon"><i class="uil uil-github-alt"></i></div>
+            <div class="icon"><ion-icon name="logo-linkedin"></ion-icon></div>
+            <div class="icon"><ion-icon name="logo-github"></ion-icon></div>
         </div>
         <div class="bottom-footer">
             <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Mathéo Hersan</a> All rights reserved</p>
@@ -391,6 +385,10 @@
 <!-- script -->
 <script src="assets/js/script.js"></script>
 <script src="assets/js/darkTheme.js"></script>
-<script src="assets/js/preload.js"></script>
+
+<!-- ionicons -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>

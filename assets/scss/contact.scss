@@ -9,7 +9,7 @@
     cursor: pointer;
     transition: .4s;
 
-    > i {
+    > ion-icon {
         margin-left: 10px;
     }
 
@@ -54,7 +54,7 @@
         }
     }
 
-    p > i {
+    p > ion-icon {
         font-size: 18px;
     }
 
@@ -63,7 +63,7 @@
     }
 
     &:hover.contact-info {
-        h2, p, i {
+        h2, p, ion-icon {
             color: #777;
             z-index: 2;
         }
@@ -118,7 +118,7 @@ textarea {
         }
     }
 
-    i {
+    ion-icon {
         font-size: 18px;
         rotate: -45deg;
     }
