@@ -105,7 +105,7 @@ body.dark {
   box-shadow: 0 16px 32px rgba(40, 40, 51, 0.1);
 }
 .dark .card-content .card-header {
-  border-bottom: 1px solid rgb(0, 201, 255);
+  border-bottom: 1px solid rgb(74, 223, 186);
 }
 .dark .contact-info {
   background: rgb(50, 51, 60);
