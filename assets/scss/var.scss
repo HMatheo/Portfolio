@@ -10,6 +10,12 @@ $third-color: rgb(192, 166, 49);
 $first-shadow-color: rgba(0, 0, 0, 0.1);
 $color-2: hsla(24, 100%, 47%, 1);
 $color-black  : #000000;
+$h2-font-size: 1.25rem;
+$normal-font-size: 1rem;
+$title-color: hsl(230, 24%, 12%);
+$border-color: hsl(230, 4%, 92%);
+$container-color: hsl(0, 0%, 100%);
+
 
 //dark theme
 $card-black: rgb(50, 51, 60);
@@ -24,22 +30,3 @@ $color: #9176FF;
 $dark-icon-color: #fff;
 $light-color: #f7f7f7;
 $light-icon-color: #FFDE59;
-
-:root {
-    /*========== Colors ==========*/
-    /*Color mode HSL(hue, saturation, lightness)*/
-    --first-color: hsl(230, 100%, 50%);
-    --second-color: hsl(150, 100%, 38%);
-    --title-color: hsl(230, 24%, 12%);
-    --text-color: hsl(230, 4%, 60%);
-    --gray-color: hsl(230, 24%, 88%);
-    --border-color: hsl(230, 4%, 92%);
-    --body-color: hsl(230, 100%, 98%);
-    --container-color: hsl(0, 0%, 100%);
-
-    /*========== Font and typography ==========*/
-    /*.5rem = 8px | 1rem = 16px ...*/
-    --body-font: "Syne", sans-serif;
-    --h2-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-}
