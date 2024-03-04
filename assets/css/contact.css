@@ -104,4 +104,51 @@ textarea {
   rotate: -45deg;
 }
 
+#contact_section .content.leaning {
+  padding: 40px 0 40px 0;
+}
+#contact_section .contact_content, #contact_section .social_line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+#contact_section .social_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 10px 25px 25px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(28, 28, 51, 0.2);
+  gap: 15px;
+  text-decoration: none;
+  transition: padding 0.5s ease-in-out;
+}
+#contact_section .social_link:hover {
+  padding-right: 25px;
+}
+#contact_section .social_link img {
+  width: 50px;
+}
+#contact_section .social_link .social_text {
+  overflow: hidden;
+  width: 0;
+  transition: width 0.5s ease-in-out;
+}
+#contact_section .social_link:hover .social_text {
+  width: var(--size);
+}
+#contact_section .social_link .social_text span {
+  font-size: 20px;
+  color: #425466;
+  white-space: nowrap;
+}
+#contact_section #contact_section .social_link:hover {
+  padding-right: 10px;
+}
+#contact_section #contact_section .social_link:hover .social_text {
+  width: 0;
+}
+
 /*# sourceMappingURL=contact.css.map */

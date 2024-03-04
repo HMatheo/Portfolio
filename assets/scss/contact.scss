@@ -123,3 +123,62 @@ textarea {
         rotate: -45deg;
     }
 }
+
+//more contacts
+#contact_section {
+    .content.leaning {
+        padding: 40px 0 40px 0;
+    }
+
+    .contact_content, .social_line {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .social_link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 25px 10px 25px 25px;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(28, 28, 51, 0.2);
+        gap: 15px;
+        text-decoration: none;
+        transition: padding 0.5s ease-in-out;
+
+        &:hover {
+            padding-right: 25px;
+        }
+
+        img {
+            width: 50px;
+        }
+
+        .social_text {
+            overflow: hidden;
+            width: 0;
+            transition: width 0.5s ease-in-out;
+        }
+
+        &:hover .social_text {
+            width: var(--size);
+        }
+
+        .social_text span {
+            font-size: 20px;
+            color: #425466;
+            white-space: nowrap;
+        }
+    }
+
+    #contact_section .social_link:hover {
+        padding-right: 10px;
+
+        .social_text {
+            width: 0;
+        }
+    }
+}

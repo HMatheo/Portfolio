@@ -56,9 +56,9 @@ a:visited {
     }
 }
 
-// icons design
-ion-icon {
-    font-size: 16px;
+.download-icon{
+    font-size: 20px;
+    margin: 0 0 -4px 0;
 }
 
 // base
@@ -104,6 +104,24 @@ h3{
     font-weight: 600;
     color: $text-color-second;
     margin-bottom: 15px;
+}
+
+.active-link{
+    position: relative;
+    color: $first-color;
+    transition: .3s;
+
+    &:after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -15px;
+        transform: translate(-50%, -50%);
+        width: 5px;
+        height: 5px;
+        background: $first-color;
+        border-radius: 50%;
+    }
 }
 
 /* query 1024px */
@@ -212,109 +230,30 @@ h3{
         gap: 50px;
     }
     .col{
-        display: flex;
-        justify-content: center;
         width: 100%;
     }
     .about-info, .contact-info{
         width: 100%;
     }
 
-    .project-container{
-        justify-content: center;
+    .card-content {
+        flex: 0 0 100%;
+        margin: 10px;
     }
 
 }
-.active-link{
-    position: relative;
-    color: $first-color;
-    transition: .3s;
 
-    &:after{
-        content: '';
-        position: absolute;
-        left: 50%;
-        bottom: -15px;
-        transform: translate(-50%, -50%);
-        width: 5px;
-        height: 5px;
-        background: $first-color;
-        border-radius: 50%;
-    }
-}
 
 //query 540px
 @media only screen and (max-width: 540px) {
     .featured-name {
         font-size: 40px;
     }
-    .card-content {
-        width: 100%;
-    }
-
-    .form-inputs{
+    .form-inputs {
         flex-direction: column;
     }
-    .input-field{
+    .form-inputs input, .form-inputs textarea {
         width: 100%;
-    }
-}
-
-#contact_section {
-    .content.leaning {
-        padding: 40px 0 40px 0;
-    }
-
-    .contact_content, .social_line {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .social_link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 25px 10px 25px 25px;
-        border-radius: 20px;
-        background-color: white;
-        box-shadow: 0 0 10px rgba(28, 28, 51, 0.2);
-        gap: 15px;
-        text-decoration: none;
-        transition: padding 0.5s ease-in-out;
-
-        &:hover {
-            padding-right: 25px;
-        }
-
-        img {
-            width: 50px;
-        }
-
-        .social_text {
-            overflow: hidden;
-            width: 0;
-            transition: width 0.5s ease-in-out;
-        }
-
-        &:hover .social_text {
-            width: var(--size);
-        }
-
-        .social_text span {
-            font-size: 20px;
-            color: #425466;
-            white-space: nowrap;
-        }
-    }
-
-    #contact_section .social_link:hover {
-        padding-right: 10px;
-
-        .social_text {
-            width: 0;
-        }
     }
 }
 
