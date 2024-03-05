@@ -9,6 +9,19 @@ function menuFunction(){
     }
 }
 
+//enlève le hamburger menu quand on clique sur un lien
+var menuLinks = document.querySelectorAll('.nav-menu a');
+
+for (var i = 0; i < menuLinks.length; i++) {
+    menuLinks[i].addEventListener('click', function() {
+        var menu = document.querySelector('.nav-menu');
+
+        if (menu.classList.contains('responsive')) {
+            menu.classList.remove('responsive');
+        }
+    });
+}
+
 //shadow on navbar
 window.onscroll = function (){headerShadow()};
 
@@ -43,36 +56,36 @@ const sr = ScrollReveal({
 })
 /* start */
 sr.reveal('.featured-text-card',{})
-sr.reveal('.featured-name',{delay: 100})
-sr.reveal('.featured-text-info',{delay: 200})
-sr.reveal('.featured-text-btn',{delay: 200})
-sr.reveal('.social_icons',{delay: 200})
-sr.reveal('.featured-image',{delay: 300})
+sr.reveal('.featured-name',{delay: 60})
+sr.reveal('.featured-text-info',{delay: 100})
+sr.reveal('.featured-text-btn',{delay: 100})
+sr.reveal('.social_icons',{delay: 100})
+sr.reveal('.featured-image',{delay: 100})
 
 /* projects */
-sr.reveal('.card-content',{interval: 200})
+sr.reveal('.card-content',{interval: 100})
 sr.reveal('.top-header',{})
 /* scroll left/right */
 /* -- about/contact */
 const srLeft = ScrollReveal({
     origin: 'left',
     distance: '80px',
-    duration: 2000,
+    duration: 1000,
     reset: true
 })
 
-sr.reveal('.about-info',{delay: 100})
-sr.reveal('.contact-info',{delay: 100})
+sr.reveal('.about-info',{delay: 60})
+sr.reveal('.contact-info',{delay: 60})
 /* -- about skills -- */
 const srRight = ScrollReveal({
     origin: 'left',
     distance: '80px',
-    duration: 2000,
+    duration: 1000,
     reset: true
 })
 
-srRight.reveal('.skills-box',{delay: 100})
-srRight.reveal('.form-control',{delay: 100})
+srRight.reveal('.skills-box',{delay: 60})
+srRight.reveal('.form-control',{delay: 60})
 
 /* ----- CHANGE ACTIVE LINK ----- */
 
